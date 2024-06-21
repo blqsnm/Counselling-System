@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Personality Assessment</title>
+    <!-- CSS files -->
+    <link href="css/tabler.min.css?1674944402" rel="stylesheet"/>
+    <link href="css/tabler-flags.min.css?1674944402" rel="stylesheet"/>
+    <link href="css/tabler-payments.min.css?1674944402" rel="stylesheet"/>
+    <link href="css/tabler-vendors.min.css?1674944402" rel="stylesheet"/>
+    <link href="css/demo.min.css?1674944402" rel="stylesheet"/>
+    <style>
+      @import url('https://rsms.me/inter/inter.css');
+      :root {
+      	--tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+      }
+      body {
+      	font-feature-settings: "cv03", "cv04", "cv11";
+      }
+      input[type="radio"] {
+          border-color: black;
+          opacity: 50%;
+      }
+      input[type="radio"]:checked {
+        opacity: 100%;
+      }
+      .form-label-number {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body >
+    <script src="js/demo-theme.min.js?1674944402"></script>
+    <div class="page">
+      <!-- Navbar 
+      <header class="navbar-expand-md">
+        <div class="collapse navbar-collapse" id="navbar-menu">
+          <div class="navbar navbar-light">
+            <div class="container-xl">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="home.html" >
+                    <span class="nav-link-icon d-md-none d-lg-inline-block">-->
+                      <!-- Download SVG icon from http://tabler-icons.io/i/home 
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+                    </span>
+                    <span class="nav-link-title">
+                      Home
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
+                    <span class="nav-link-icon d-md-none d-lg-inline-block">-->
+                      <!-- Download SVG icon from http://tabler-icons.io/i/checkbox 
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11l3 3l8 -8" /><path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" /></svg>
+                    </span>
+                    <span class="nav-link-title">
+                      Assessment
+                    </span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item active" href="dass.html">
+                      DASS
+                    </a>
+                    <a class="dropdown-item" href="personaliti.html">
+                      Personality
+                    </a>
+                    <a class="dropdown-item" href="gaya-belajar.html">
+                      Gaya Belajar
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#navbar-help" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
+                    <span class="nav-link-icon d-md-none d-lg-inline-block">-->
+                      <!-- Download SVG icon from http://tabler-icons.io/i/lifebuoy 
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M15 15l3.35 3.35" /><path d="M9 15l-3.35 3.35" /><path d="M5.65 5.65l3.35 3.35" /><path d="M18.35 5.65l-3.35 3.35" /></svg>
+                    </span>
+                    <span class="nav-link-title">
+                      Help
+                    </span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./changelog.html">
+                      FAQ
+                    </a>
+                    <a class="dropdown-item" href="./docs/">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-inline me-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path></svg>
+                      Talk to someone
+                    </a>
+                  </div>
+                </li>
+              </ul>
+              <div class="my-2 my-md-0 flex-grow-1 flex-md-grow-0 order-first order-md-last">
+                <form action="./" method="get" autocomplete="off" novalidate>
+                  <div class="input-icon">
+                    <span class="input-icon-addon">-->
+                      <!-- Download SVG icon from http://tabler-icons.io/i/search 
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                    </span>
+                    <input type="text" value="" class="form-control" placeholder="Search…" aria-label="Search in website">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>-->
+      <div class="page-wrapper">
+        <div class="page-header d-print-none">
+          <div class="container-xl">
+            <div class="row g-2 align-items-center">
+              <div class="mb-1">
+                <ol class="breadcrumb" aria-label="breadcrumbs">
+                  <li class="breadcrumb-item"><a href="home.php">Home</a></li>
+                  <li class="breadcrumb-item"><a href="home.php#assessment">Assessment</a></li>
+                  <li class="breadcrumb-item active" aria-current="page"><a href="#">Personality Test</a></li>
+                </ol>
+              </div>
+              <div class="col">
+                <h2>
+                  Please read the statement and choose the answer that is relevant to you.
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-body">
+          <div class="container-xl d-flex flex-column justify-content-center">
+              <div class="card">
+                <form name="dass-assessment" method="post" action="submission-form-personality.php">
+                  <div class="card-body markdown">
+                    <div class="row row-cards description">
+                      <div class="col-md-8 question"></div>
+                      <div class="col-md-1">
+                        <label>Often</label>
+                      </div>
+                      <div class="col-md-1">
+                        <label>Always</label>
+                      </div>
+                      <div class="col-md-1">
+                        <label>Sometimes</label>
+                      </div>
+                      <div class="col-md-1">
+                        <label>Never</label>
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>1.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">I prefer to play or watch fast sports.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan1" value="5">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan1" value="4">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan1" value="2">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan1" value="0">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>2.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">The driver who drives slowly in front of me is making fun of me.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan2" value="5">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan2" value="4">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan2" value="2">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan2" value="0">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>3.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">I only talk about important things to myself.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan3" value="5">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan3" value="4">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan3" value="2">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan3" value="0">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>4.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">While eating I like to read the newspaper or watch TV.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan4" value="5">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan4" value="4">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan4" value="2">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan4" value="0">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>5.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">I feel guilty for not doing anything.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan5" value="5">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan5" value="4">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan5" value="2">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan5" value="0">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>6.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">I like competitive or challenging sports.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan6" value="5">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan6" value="4">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan6" value="2">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan6" value="0">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>7.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">I always care about completing tasks on time.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan7" value="5">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan7" value="4">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan7" value="2">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan7" value="0">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>8.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">I eat faster than others.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan8" value="5">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan8" value="4">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan8" value="2">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan8" value="0">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>9.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">I like to walk or move fast.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan9" value="5">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan9" value="4">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan9" value="2">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan9" value="0">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>10.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">I think or multitask or multitask.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan10" value="5">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan10" value="4">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan10" value="2">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan10" value="0">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>11.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">I try to finish all tasks in the time available.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan11" value="5">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan11" value="4">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan11" value="2">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan11" value="0">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>12.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">I get shivers when I speak in public.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan12" value="5">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan12" value="4">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan12" value="2">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan12" value="0">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>13.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">I like interrupting people's conversations.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan13" value="5">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan13" value="4">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan13" value="2">
+                        </label>
+                      </div>
+                      <div class="col-md-1">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="soalan13" value="0">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>14.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">I don't like queuing or waiting.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan14" value="5">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan14" value="4">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan14" value="2">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan14" value="0">
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>15.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">I sleep more than most people.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan15" value="5">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan15" value="4">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan15" value="2">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan15" value="0">
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>16.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">I like to talk faster than others.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan16" value="5">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan16" value="4">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan16" value="2">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan16" value="0">
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>17.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">To make sure it's done right, I'll do all the work.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan17" value="5">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan17" value="4">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan17" value="2">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan17" value="0">
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>18.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">I have a reason to be on time for an appointment.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan18" value="5">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan18" value="4">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan18" value="2">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan18" value="0">
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>19.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">I measure my success in life by my ability to accumulate possessions.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan19" value="5">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan19" value="4">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan19" value="2">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan19" value="0">
+                      </div>
+                    </div>
+                    <div class="row row-cards">
+                      <div class="col-md-1">
+                        <div class="form-label-number"><strong>20.</strong></div>
+                      </div>
+                      <div class="col-md-7 question">
+                        <div class="form-label">I can't wait to see someone else do something I can do faster or better.</div>
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan20" value="5">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan20" value="4">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan20" value="2">
+                      </div>
+                      <div class="col-md-1">
+                        <input class="form-check-input" type="radio" name="soalan20" value="0">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-end">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer footer-transparent d-print-none">
+          <div class="container-xl">
+            <div class="row text-center align-items-center flex-row-reverse">
+              <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                <ul class="list-inline list-inline-dots mb-0">
+                  <li class="list-inline-item">
+                    Copyright &copy; 2023
+                    <a href="." class="link-secondary">Tabler</a>.
+                    All rights reserved.
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="./changelog.html" class="link-secondary" rel="noopener">
+                      v1.0.0-beta17
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script>
+      //disable button submit selagi ada soalan tak jawab (tak jadi)
+      /*(function() {
+          $('form > input').keyup(function() {
+
+              /*var empty = false;
+              $('form > input').each(function() {
+                  if ($(this).val() == '') {
+                      empty = true;
+                  }
+              });
+
+              var isRadioUnchecked = $("input[type='radio']:checked").length === 0;
+
+              if (isRadioUnchecked) {
+                  $('#register').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+              } else {
+                  $('#register').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+              }
+          });
+      })*/
+    </script>
+    <!-- Libs JS -->
+    <!-- Tabler Core -->
+    <script src="js/tabler.min.js?1674944402" defer></script>
+    <script src="js/demo.min.js?1674944402" defer></script>
+  </body>
+</html>

@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Learning style</title>
+    <!-- CSS files -->
+    <link href="css/tabler.min.css?1674944402" rel="stylesheet"/>
+    <link href="css/tabler-flags.min.css?1674944402" rel="stylesheet"/>
+    <link href="css/tabler-payments.min.css?1674944402" rel="stylesheet"/>
+    <link href="css/tabler-vendors.min.css?1674944402" rel="stylesheet"/>
+    <link href="css/demo.min.css?1674944402" rel="stylesheet"/>
+    <style>
+      @import url('https://rsms.me/inter/inter.css');
+      :root {
+      	--tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+      }
+      body {
+      	font-feature-settings: "cv03", "cv04", "cv11";
+      }
+      input[type="radio"] {
+          border-color: black;
+          opacity: 50%;
+      }
+      input[type="radio"]:checked {
+        opacity: 100%;
+      }
+      .form-label-number {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body >
+    <script src="js/demo-theme.min.js?1674944402"></script>
+    <div class="page">
+     
+      <div class="page-wrapper">
+        <div class="page-header d-print-none">
+          <div class="container-xl">
+            <div class="row g-2 align-items-center">
+              <div class="mb-1">
+                <ol class="breadcrumb" aria-label="breadcrumbs">
+                  <li class="breadcrumb-item"><a href="home.php">Home</a></li>
+                  <li class="breadcrumb-item"><a href="home.php#assessment">Assessment</a></li>
+                  <li class="breadcrumb-item active" aria-current="page"><a href="#">Learning style</a></li>
+                </ol>
+              </div>
+              <div class="col">
+                <h2>
+                  Read each statement below carefully. Select the answer for each statement that you feel most accurately describes how you feel in relation to each statement based on the following scale:
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-body">
+          <div class="container-xl d-flex flex-column justify-content-center">
+            <div class="card">
+              <form name="gayabelajar-assessment" method="post" action="submission-form-gayabelajar.php">
+                <div class="card-body markdown">
+                  <div class="row row-cards description">
+                    <div class="col-md-9 question"></div>
+                    <div class="col-md-1">
+                      <label>Always</label>
+                    </div>
+                    <div class="col-md-1">
+                      <label>Sometimes</label>
+                    </div>
+                    <div class="col-md-1">
+                      <label>Rarely</label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>1.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I am able to remember subjects by listening to lectures that contain information, explanations and discussions.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori1" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori1" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori1" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>2.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I prefer to see the information written on the blackboard along with the help of drawings and reading materials.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual1" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual1" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual1" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>3.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I like to write or take notes for revision.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual2" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual2" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual2" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>4.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I prefer to use posters, models, practical exercises and other activities in class.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik1" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik1" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik1" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>5.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I need explanations in the form of diagrams, graphs or instructions.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori2" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori2" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori2" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>6.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I like working with my hands and making things with them.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik2" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik2" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik2" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>7.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I am skilled and enjoy building and producing graphs and charts.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual3" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual3" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual3" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>8.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I can identify many different sounds.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori3" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori3" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori3" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>9.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I can remember better if I write notes over and over again.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik3" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik3" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik3" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>10.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I can easily understand and follow map directions.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual4" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual4" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual4" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>11.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I can learn well by listening to lecture recordings.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori4" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori4" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori4" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>12.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I play with coins or keys in the pocket.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik4" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik4" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik4" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>13.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I learn to spell better by repeating the words out loud than by rewriting them.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori5" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori5" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori5" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>14.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I understand articles in newspapers better by reading them than by listening to them on the radio.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual5" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual5" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual5" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>15.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I chew gum or snack while studying.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik5" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik5" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik5" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>16.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I think the best way to remember something is to visualize it in your mind.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual6" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual6" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual6" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>17.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I learn to spell a word by imagining the spelling in my mind.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik6" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik6" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik6" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>18.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I'd rather listen to a good lecture than read a textbook.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori6" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori6" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori6" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>19.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I like solving "jigsaw puzzles" and "mazes".</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual7" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual7" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual7" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>20.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I grasped an object while studying.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik7" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik7" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik7" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>21.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I prefer listening to the news on the radio than reading the newspaper.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori7" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori7" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori7" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>22.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I prefer to learn about things by reading about them.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual8" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual8" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="visual8" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>23.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I am comfortable shaking hands and making contact with friends.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik8" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik8" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="kinestetik8" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row row-cards">
+                    <div class="col-md-1">
+                      <div class="form-label-number"><strong>24.</strong></div>
+                    </div>
+                    <div class="col-md-8 question">
+                      <div class="form-label">I follow verbal instructions better than book instructions.</div>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori8" value="3">
+                        <span class="form-check-label">3</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori8" value="2">
+                        <span class="form-check-label">2</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1">
+                      <label class="form-check">
+                        <input class="form-check-input" type="radio" name="auditori8" value="1">
+                        <span class="form-check-label">1</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer text-end">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <footer class="footer footer-transparent d-print-none">
+          <div class="container-xl">
+            <div class="row text-center align-items-center flex-row-reverse">
+              <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                <ul class="list-inline list-inline-dots mb-0">
+                  <li class="list-inline-item">
+                    Copyright &copy; 2023
+                    <a href="." class="link-secondary">Tabler</a>.
+                    All rights reserved.
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="./changelog.html" class="link-secondary" rel="noopener">
+                      v1.0.0-beta17
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- Libs JS -->
+    <!-- Tabler Core -->
+    <script src="js/tabler.min.js?1674944402" defer></script>
+    <script src="js/demo.min.js?1674944402" defer></script>
+  </body>
+</html>
